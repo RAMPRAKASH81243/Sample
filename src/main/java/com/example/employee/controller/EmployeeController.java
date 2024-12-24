@@ -42,7 +42,7 @@ Optional<Employee> employee = employeeService.getEmployeeById(id);
 return employee.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
 }
  
-// Update employee by ID
+// Update employee by ID is Ram
 @PutMapping("/{id}")
 public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @Valid @RequestBody Employee employeeDetails) {
 Optional<Employee> updatedEmployee = employeeService.updateEmployee(id, employeeDetails);
