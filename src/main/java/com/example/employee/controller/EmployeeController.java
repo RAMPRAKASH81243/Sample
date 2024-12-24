@@ -35,7 +35,7 @@ public List<Employee> getAllEmployees() {
 return employeeService.getAllEmployees();
 }
  
-// Get employee by ID
+// Get employee by ID is Manoj
 @GetMapping("/{id}")
 public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
 Optional<Employee> employee = employeeService.getEmployeeById(id);
